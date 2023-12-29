@@ -1,38 +1,26 @@
-# create-svelte
+# InterestEngine
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+InterestEngine is a simple web app form designed for TU DubLAN where potential attendees register their interest in the event. The app is built using SvelteKit, with the Prisma ORM attached to aP Postgres database to store the data.
 
-## Creating a project
+The app is deployed on my VPS using Docker, with Nginx as a reverse proxy.
+At present, the app is not modular and is designed to be used for a single event. In the future, I plan to make the app modular so that it can be used for multiple events.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Installation
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+1. Clone the repository
+2. Install dependencies using `npm install`
+3. Modify the `.envexample` file to `.env` and fill in the required details
+4. Run `npm run dev` to start the development server
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Deployment
 
-## Developing
+1. Clone the repository
+2. Install dependencies using `npm install`
+3. Modify the `.envexample` file to `.env` and fill in the required details
+4. Run `docker build -t interestengine .` to build the Docker image
+5. Run `docker run -d -p 3000:3000 --name interestengine interestengine` to run the Docker container
+6. Configure Nginx to reverse proxy to the app
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## License
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details
