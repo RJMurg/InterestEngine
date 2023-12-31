@@ -8,6 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	height: 100vh;
 
 	/* align items in the center of the page */
 	display: flex;
@@ -34,4 +35,10 @@ body {
 	font-weight: 200;
 	font-size: 2rem;
 	text-shadow: 5px 5px 5px 5px var(--grey-1);
+}
+
+.footer {
+	font-style: italic;
+	margin-top: 2rem;
+	padding: 0, 1rem, 0, 1rem;
 }

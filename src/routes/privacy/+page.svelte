@@ -9,7 +9,10 @@
 
 	<h2 class="subtitle medium">tl;dr (Summary)</h2>
 	<ol>
-		<li>We collect only your E-Mail Address, IP Address, Institution name, event selections and maximum price for the Interest Form.</li>
+		<li>
+			We collect only your E-Mail Address, IP Address, Institution name, event selections and
+			maximum price for the Interest Form.
+		</li>
 		<li>Your data is only used for the app and isn't given to third parties.</li>
 		<li>You can ask to see your data or have it removed anytime.</li>
 		<li>The IP Addresses are deleted after the form closes.</li>
@@ -18,10 +21,10 @@
 
 	<h2 class="subtitle medium">Introduction</h2>
 	<section>
-		Welcome to the TU DubLAN Interest Form web application, a project managed by the CS++ and E-Sports Societies of TU Dublin. We take
-		your privacy seriously and this Privacy Policy explains the ways in which we collect, use, and
-		protect your personal information. By using this web app, you agree to the terms outlined in
-		this Privacy Policy.
+		Welcome to the TU DubLAN Interest Form web application, a project managed by the CS++ and
+		E-Sports Societies of TU Dublin. We take your privacy seriously and this Privacy Policy explains
+		the ways in which we collect, use, and protect your personal information. By using this web app,
+		you agree to the terms outlined in this Privacy Policy.
 	</section>
 
 	<h2 class="subtitle medium">Data Collection</h2>
@@ -32,11 +35,11 @@
 		<ol>
 			<li>E-Mail Address</li>
 			<li>IP Address</li>
-            <li>Place of Study</li>
+			<li>Place of Study</li>
 		</ol>
 
-		This data is collected exclusively for the purpose of Interest research and will not be used for any other
-		applications or transferred to third parties.
+		This data is collected exclusively for the purpose of Interest research and will not be used for
+		any other applications or transferred to third parties.
 	</section>
 
 	<h2 class="subtitle medium">Usage of Data</h2>
@@ -46,9 +49,7 @@
 
 		<ol>
 			<li>Preventing spam / duplicate submissions.</li>
-			<li>
-				Contacting those who have submitted the form with updates on the status of the event.
-			</li>
+			<li>Contacting those who have submitted the form with updates on the status of the event.</li>
 		</ol>
 	</section>
 

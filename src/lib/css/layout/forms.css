@@ -6,8 +6,16 @@ form {
 	margin: 0 auto;
 }
 
-.form{
-	width: 60%;
+@media screen and (min-width: 1024px) {
+	.form {
+		width: clamp(200px, 40%, 400px);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.form {
+		width: clamp(300px, 100%, 400px);
+	}
 }
 
 .form-element {
@@ -168,6 +176,7 @@ input[type='range'] {
 
 button {
 	padding: 0.5rem;
+	margin-top: 1rem;
 	border-radius: 0.5rem;
 	border: none;
 	background-color: var(--grey-3);
@@ -185,7 +194,7 @@ label {
 	padding-right: 0.5rem;
 }
 
-i {
+.lucide {
 	color: var(--green);
 	font-size: 1.5rem;
 	margin-right: 0.5rem;

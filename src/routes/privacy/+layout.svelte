@@ -1,5 +1,5 @@
 <script lang="ts">
-    import '$lib/css/left.css';
+	import '$lib/css/left.css';
 </script>
 
-<slot></slot>
+<slot />
