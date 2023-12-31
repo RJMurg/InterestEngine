@@ -27,6 +27,7 @@ body {
 	font-weight: 700;
 	font-size: 3rem;
 	text-shadow: 5px 5px 5px 5px var(--grey-1);
+	color: var(--blue);
 }
 
 .subtitle {
