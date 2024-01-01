@@ -26,6 +26,7 @@ git clone https://github.com/RJMurg/InterestEngine
 
 2. Install dependencies using `npm install`.
 3. Modify the `.envexample` file to `.env` and fill in the Database URL.
+- If you are hosting the database on the same server, set the address to `host.docker.internal`
 4. Run `docker build -t interestengine .` to build the Docker image.
 5. Run `docker run -d -p 3000:3000 --name interestengine interestengine` to run the Docker container.
 6. Configure your web server to reverse proxy to this container.
