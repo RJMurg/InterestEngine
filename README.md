@@ -7,9 +7,11 @@ InterestEngine will be deployed on my VPS through Docker, with Nginx providing a
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/RJMurg/InterestEngine
 ```
+
 2. Install dependencies using `npm install`.
 3. Modify the `.envexample` file to `.env` and fill in the Database URL.
 4. Run `npm run dev` to start the development server, it will be available on `localhost:5173`.
@@ -17,9 +19,11 @@ git clone https://github.com/RJMurg/InterestEngine
 ## Deployment
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/RJMurg/InterestEngine
 ```
+
 2. Install dependencies using `npm install`.
 3. Modify the `.envexample` file to `.env` and fill in the Database URL.
 4. Run `docker build -t interestengine .` to build the Docker image.

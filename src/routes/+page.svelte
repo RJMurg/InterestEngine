@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import '$lib/css/colours/tudublin.css';
+	import '$lib/css/colours/gradients.css';
 	import { SendHorizontal } from 'lucide-svelte';
 	import { Container, Row, Col } from '@sveltestrap/sveltestrap';
 
@@ -15,6 +16,11 @@
 
 <h1 class="title medium nogap" style="color: var(--tu-dublin-primary-2);">TU DubLAN</h1>
 <h2 class="subtitle nogap">Interest form</h2>
+
+<p>
+	One-paragraph explainer here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+	euismod, diam eget
+</p>
 
 <Container class="form">
 	<form method="post">
@@ -51,7 +57,7 @@
 
 		<label for="interests"> What events are you interested in? </label>
 		<div id="interests">
-			<Row cols={3} style="width: 100%;">
+			<Row cols={3} style="width: 100%;" class="selectelement">
 				<Col>
 					<label for="lan"> LAN Tournament </label>
 					<input type="checkbox" name="lan" id="lan" />

@@ -6,18 +6,6 @@ form {
 	margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
-	.form {
-		width: clamp(200px, 40%, 400px);
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.form {
-		width: clamp(300px, 100%, 400px);
-	}
-}
-
 .form-element {
 	padding-top: 1rem;
 }
@@ -174,6 +162,10 @@ input[type='range'] {
 	font-family: 'IBM Plex Mono', monospace;
 }
 
+input:invalid {
+	border: 0.1rem solid var(--red);
+}
+
 button {
 	padding: 0.5rem;
 	margin-top: 1rem;
@@ -185,13 +177,39 @@ button {
 	font-weight: 700;
 	box-shadow: 5px 5px 5px 0 var(--black);
 	cursor: pointer;
+	transition: 0.5s ease-out;
+}
+
+fieldset {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+button:hover {
+	background-color: var(--grey-4);
+	scale: 1.05;
+	transition: 0.5s ease-in;
 }
 
 label {
-	padding-top: 1rem;
+	margin: 1rem 0 0.5rem 0;
 	align-self: flex-start;
 	font-weight: 700;
 	padding-right: 0.5rem;
+}
+
+div.selectelement {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+div.selectelement label {
+	margin: 0;
 }
 
 .lucide {
@@ -202,7 +220,7 @@ label {
 }
 
 .required:after {
-	content: '*';
-	color: var(--red);
+	content: ' *';
+	color: var(--red-4);
 	font-weight: bold;
 }
