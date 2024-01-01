@@ -41,7 +41,7 @@
 
 		<Row style="width: 100%;">
 			<label for="colleges" class="required"> Colleges </label>
-			<select name="colleges" id="colleges" bind:value={choice} required>
+			<select name="colleges" id="colleges" required>
 				{#each data.colleges as college}
 					<option value={college}>
 						{college}
@@ -91,7 +91,13 @@
 		</div>
 
 		<label for="price" class="required"> What is the maximum you'd pay for a ticket? </label>
-		<input type="text" name="price" id="price" placeholder="€0.00" inputmode="decimal" required />
+		<select name="price" id="price" required>
+			<option value="0-10">€0 - €10</option>
+			<option value="10-20">€10 - €20</option>
+			<option value="20-30">€20 - €30</option>
+			<option value="30-40">€30 - €40</option>
+			<option value="40-50">€40 - €50</option>
+		</select>
 
 		<button class="medium">
 			<SendHorizontal />
