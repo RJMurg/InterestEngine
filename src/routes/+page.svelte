@@ -17,10 +17,24 @@
 <h1 class="title medium nogap" style="color: var(--tu-dublin-primary-2);">TU DubLAN</h1>
 <h2 class="subtitle nogap">Interest form</h2>
 
-<p>
-	One-paragraph explainer here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-	euismod, diam eget
-</p>
+<div class="explainer">
+	<p>
+		TU DubLAN is an upcoming gaming, esports and cybersecurity event aimed at students all over
+		Ireland.
+	</p>
+
+	<p>
+		Jump into one of the <strong>largest</strong> student-run events in the country and experience a
+		wide range of activities across multiple days. Including esports tournaments in multiple titles,
+		tabletop gaming tournaments and events, a cybersecurity capture the flag and more! Test your abilities,
+		connect with the community and have a great time.
+	</p>
+
+	<p>
+		We need your help to make it happen! Register your interest with this form to help us secure
+		partnerships, and be the first to hear new announcements!
+	</p>
+</div>
 
 <Container class="form">
 	<form method="post">
@@ -57,33 +71,33 @@
 
 		<label for="interests"> What events are you interested in? </label>
 		<div id="interests">
-			<Row cols={3} style="width: 100%;" class="selectelement">
-				<Col>
+			<Row class="selectelement">
+				<Col lg="12" class="element">
 					<label for="lan"> LAN Tournament </label>
 					<input type="checkbox" name="lan" id="lan" />
 				</Col>
 
-				<Col>
+				<Col lg="12" class="element">
 					<label for="ctf"> CTF </label>
 					<input type="checkbox" name="ctf" id="ctf" />
 				</Col>
 
-				<Col>
+				<Col lg="12" class="element">
 					<label for="gamejam"> Game Jam </label>
 					<input type="checkbox" name="gamejam" id="gamejam" />
 				</Col>
 
-				<Col>
+				<Col lg="12" class="element">
 					<label for="magic"> Magic Tournament </label>
 					<input type="checkbox" name="magic" id="magic" />
 				</Col>
 
-				<Col>
+				<Col lg="12" class="element">
 					<label for="tabletop"> Tabletop Games </label>
 					<input type="checkbox" name="tabletop" id="interests" />
 				</Col>
 
-				<Col>
+				<Col lg="12" class="element">
 					<label for="casualgames"> Casual Games Room </label>
 					<input type="checkbox" name="casualgames" id="casualgames" />
 				</Col>
@@ -109,6 +123,6 @@
 <div class="footer">
 	<p>Your email will only be used by us to contact you about TU DubLAN and for no other purpose.</p>
 	<p>
-		<a href="privacy">Privacy Policy</a>
+		<a href="privacy" data-sveltekit-preload-data="false">Privacy Policy</a>
 	</p>
 </div>

@@ -13,6 +13,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
-	align-items: left;
+	align-items: start;
 	text-align: left !important;
 }
