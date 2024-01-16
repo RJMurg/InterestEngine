@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
-	let css;
+	let css: HTMLStyleElement;
 
 	onMount(() => {
 		css = document.createElement('style');
@@ -26,7 +26,7 @@
 			align-items: start;
 			text-align: left !important;
 		}
-		`
+		`;
 		document.head.appendChild(css);
 	});
 
@@ -60,9 +60,9 @@
 		<h2 class="subtitle medium">Introduction</h2>
 		<section>
 			Welcome to the TU DubLAN Interest Form web application, a project managed by the CS++ and
-			E-Sports Societies of TU Dublin. We take your privacy seriously and this Privacy Policy explains
-			the ways in which we collect, use, and protect your personal information. By using this web app,
-			you agree to the terms outlined in this Privacy Policy.
+			E-Sports Societies of TU Dublin. We take your privacy seriously and this Privacy Policy
+			explains the ways in which we collect, use, and protect your personal information. By using
+			this web app, you agree to the terms outlined in this Privacy Policy.
 		</section>
 
 		<h2 class="subtitle medium">Data Collection</h2>
@@ -76,8 +76,8 @@
 				<li>Place of Study</li>
 			</ol>
 
-			This data is collected exclusively for the purpose of Interest research and will not be used for
-			any other applications or transferred to third parties.
+			This data is collected exclusively for the purpose of Interest research and will not be used
+			for any other applications or transferred to third parties.
 		</section>
 
 		<h2 class="subtitle medium">Usage of Data</h2>
@@ -87,7 +87,9 @@
 
 			<ol>
 				<li>Preventing spam / duplicate submissions.</li>
-				<li>Contacting those who have submitted the form with updates on the status of the event.</li>
+				<li>
+					Contacting those who have submitted the form with updates on the status of the event.
+				</li>
 			</ol>
 		</section>
 
@@ -121,8 +123,8 @@
 		<h2 class="subtitle medium">Changes to Privacy Policy</h2>
 
 		<section>
-			We reserve the right to make changes to this Privacy Policy at our discretion. All changes will
-			be posted on this page, so we encourage users to check this policy regularly.
+			We reserve the right to make changes to this Privacy Policy at our discretion. All changes
+			will be posted on this page, so we encourage users to check this policy regularly.
 		</section>
 
 		<h2 class="subtitle medium">Contact Information</h2>

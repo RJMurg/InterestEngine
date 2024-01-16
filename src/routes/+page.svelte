@@ -24,9 +24,9 @@
 	</p>
 
 	<p>
-		Jump into one of the largest student-run events in the country and experience a
-		wide range of activities across multiple days. Including esports tournaments in multiple titles,
-		tabletop gaming tournaments and events, a cybersecurity capture the flag and more! Test your abilities,
+		Jump into one of the largest student-run events in the country and experience a wide range of
+		activities across multiple days. Including esports tournaments in multiple titles, tabletop
+		gaming tournaments and events, a cybersecurity capture the flag and more! Test your abilities,
 		connect with the community and have a great time.
 	</p>
 
@@ -45,9 +45,7 @@
 		<select name="colleges" id="colleges" required bind:value={choice}>
 			{#each data.colleges as college, i}
 				{#if i == 0}
-					<option value="" disabled selected hidden>
-						Select your institution
-					</option>
+					<option value="" disabled selected hidden> Select your institution </option>
 				{/if}
 				<option value={college}>
 					{college}
@@ -62,7 +60,7 @@
 
 		<label for="interests"> What events are you interested in? </label>
 		<div id="interests">
-			<Row cols={{md: 3, xs: 1}} class="selectelement">
+			<Row cols={{ md: 3, xs: 1 }} class="selectelement">
 				<Col>
 					<label for="lan"> LAN Tournament </label>
 					<input type="checkbox" name="lan" id="lan" />
@@ -119,6 +117,7 @@
 <div class="footer">
 	<p>Your email will only be used by us to contact you about TU DubLAN and for no other purpose.</p>
 	<p class="links">
-		<a href="privacy" data-sveltekit-preload-data="false">Privacy Policy</a> | <a href="mailto:esports@socs.dit.ie">Contact Us</a>
+		<a href="privacy" data-sveltekit-preload-data="false">Privacy Policy</a> |
+		<a href="mailto:esports@socs.dit.ie">Contact Us</a>
 	</p>
 </div>
