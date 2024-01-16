@@ -63,7 +63,7 @@ button:hover {
 
 label {
 	margin: 1rem 0 0.5rem 0;
-	align-self: flex-start;
+	align-self: flex-start !important;
 	font-weight: 700;
 	padding-right: 0.5rem;
 }
@@ -82,7 +82,6 @@ div.selectelement label {
 
 .required:after {
 	content: ' *';
-	color: var(--red-4);
 	font-weight: bold;
 }
 
@@ -92,4 +91,8 @@ div.selectelement label {
 	justify-content: center;
 	align-items: center;
 	width: max-content;
+}
+
+.element label {
+	font-weight: 400;
 }

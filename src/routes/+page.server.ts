@@ -4,6 +4,7 @@ import prisma from '$lib/server/prisma';
 import { Prisma } from '@prisma/client';
 
 const colleges = [
+	'Technological University Dublin',
 	'American College Dublin',
 	'Atlantic Technological University',
 	'Burren College of Art',
@@ -66,8 +67,6 @@ const colleges = [
 	'St. Nicholas Montessori College',
 	'St. Patricks College, Thurles',
 	'St. Patricks, Carlow College',
-	'Technological Universities in Ireland',
-	'Technological University Dublin',
 	'Technological University of the Shannon: Midlands Midwest',
 	'The Gaiety School of Acting',
 	'The Grafton Academy',

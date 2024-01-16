@@ -24,7 +24,7 @@
 	</p>
 
 	<p>
-		Jump into one of the <strong>largest</strong> student-run events in the country and experience a
+		Jump into one of the largest student-run events in the country and experience a
 		wide range of activities across multiple days. Including esports tournaments in multiple titles,
 		tabletop gaming tournaments and events, a cybersecurity capture the flag and more! Test your abilities,
 		connect with the community and have a great time.
@@ -41,65 +41,51 @@
 		<!--Hidden IP address item-->
 		<input type="hidden" name="ip" value={data.ip} />
 
-		<Row style="width: 100%;">
-			<label for="email" class="required"> Email </label>
-			<input
-				type="email"
-				name="email"
-				id="email"
-				inputmode="email"
-				placeholder="bob@example.com"
-				required
-			/>
-		</Row>
-
-		<Row style="width: 100%;">
-			<label for="colleges" class="required"> Colleges </label>
-			<select name="colleges" id="colleges" required>
-				{#each data.colleges as college}
-					<option value={college}>
-						{college}
+		<label for="colleges" class="required">Where do you study? </label>
+		<select name="colleges" id="colleges" required bind:value={choice}>
+			{#each data.colleges as college, i}
+				{#if i == 0}
+					<option value="" disabled selected hidden>
+						Select your institution
 					</option>
-				{/each}
-			</select>
+				{/if}
+				<option value={college}>
+					{college}
+				</option>
+			{/each}
+		</select>
 
-			{#if choice == 'Other'}
-				<label for="other" class="required"> Name of your Institution </label>
-				<input type="text" name="other" id="other" placeholder="Name of college" required />
-			{/if}
-		</Row>
+		{#if choice == 'Other'}
+			<label for="other" class="required">If Other, what is the name? </label>
+			<input type="text" name="other" id="other" placeholder="Name of institution" required />
+		{/if}
 
 		<label for="interests"> What events are you interested in? </label>
 		<div id="interests">
-			<Row class="selectelement">
-				<Col lg="12" class="element">
+			<Row cols={{md: 3, xs: 1}} class="selectelement">
+				<Col>
 					<label for="lan"> LAN Tournament </label>
 					<input type="checkbox" name="lan" id="lan" />
 				</Col>
 
-				<Col lg="12" class="element">
+				<Col>
 					<label for="ctf"> CTF </label>
 					<input type="checkbox" name="ctf" id="ctf" />
 				</Col>
 
-				<Col lg="12" class="element">
+				<Col>
 					<label for="gamejam"> Game Jam </label>
 					<input type="checkbox" name="gamejam" id="gamejam" />
 				</Col>
 
-				<Col lg="12" class="element">
+				<Col>
 					<label for="magic"> Magic Tournament </label>
 					<input type="checkbox" name="magic" id="magic" />
 				</Col>
 
-				<Col lg="12" class="element">
+				<Col>
 					<label for="tabletop"> Tabletop Games </label>
 					<input type="checkbox" name="tabletop" id="interests" />
-				</Col>
-
-				<Col lg="12" class="element">
-					<label for="casualgames"> Casual Games Room </label>
-					<input type="checkbox" name="casualgames" id="casualgames" />
 				</Col>
 			</Row>
 		</div>
@@ -113,6 +99,16 @@
 			<option value="40-50">€40 - €50</option>
 		</select>
 
+		<label for="email" class="required">What is your Email? </label>
+		<input
+			type="email"
+			name="email"
+			id="email"
+			inputmode="email"
+			placeholder="bob@example.com"
+			required
+		/>
+
 		<button class="medium">
 			<SendHorizontal />
 			Submit!
@@ -122,7 +118,7 @@
 
 <div class="footer">
 	<p>Your email will only be used by us to contact you about TU DubLAN and for no other purpose.</p>
-	<p>
-		<a href="privacy" data-sveltekit-preload-data="false">Privacy Policy</a>
+	<p class="links">
+		<a href="privacy" data-sveltekit-preload-data="false">Privacy Policy</a> | <a href="mailto:esports@socs.dit.ie">Contact Us</a>
 	</p>
 </div>

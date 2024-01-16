@@ -1,5 +1,9 @@
 html,
-body {
+body{
+	width: 100%;
+}
+
+.left {
 	background-color: var(--black);
 	font-family: 'IBM Plex Sans', sans-serif;
 	color: var(--white);
