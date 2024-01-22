@@ -44,7 +44,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@prisma/client": "^5.7.1",
+		"@prisma/client": "^5.8.1",
 		"@sveltestrap/sveltestrap": "^6.1.0",
 		"lucide-svelte": "^0.303.0"
 	}

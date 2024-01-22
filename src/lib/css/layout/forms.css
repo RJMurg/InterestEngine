@@ -94,6 +94,6 @@ div.selectelement label {
 	width: max-content;
 }
 
-.element label {
-	font-weight: 400;
+.selectelement label {
+	font-weight: normal;
 }
