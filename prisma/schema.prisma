@@ -13,5 +13,7 @@ model responses {
   interests String?
   max_price String?   @db.VarChar(5)
   timestamp DateTime? @db.Timestamp(6)
+  rentpc    String?   @db.VarChar(10)
+  games     String?
   ip        String?
 }

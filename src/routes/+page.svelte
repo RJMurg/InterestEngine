@@ -8,6 +8,11 @@
 	export let data: PageData;
 
 	let choice = '';
+	let interestedInGames = false;
+
+	function changeChoice() {
+		interestedInGames = interestedInGames ? false : true;
+	}
 </script>
 
 <head>
@@ -63,7 +68,7 @@
 			<Row cols={{ md: 3, xs: 1 }} class="selectelement">
 				<Col>
 					<label for="lan"> LAN Tournament </label>
-					<input type="checkbox" name="lan" id="lan" />
+					<input type="checkbox" name="lan" id="lan" on:change={changeChoice} />
 				</Col>
 
 				<Col>
@@ -87,6 +92,48 @@
 				</Col>
 			</Row>
 		</div>
+
+		{#if interestedInGames}
+			<label for="lanGames"> What LAN games are you interested in? </label>
+			<div id="lanGames">
+				<Row cols={{ md: 3, xs: 1 }} class="selectelement">
+					<Col>
+						<label for="cs2"> Counter Strike 2 </label>
+						<input type="checkbox" name="cs2" id="cs2" />
+					</Col>
+
+					<Col>
+						<label for="lol"> League </label>
+						<input type="checkbox" name="lol" id="lol" />
+					</Col>
+
+					<Col>
+						<label for="valorant"> Valorant </label>
+						<input type="checkbox" name="valorant" id="valorant" />
+					</Col>
+
+					<Col>
+						<label for="smash"> Smash </label>
+						<input type="checkbox" name="smash" id="smash" />
+					</Col>
+
+					<Col>
+						<label for="rl"> Rocket League </label>
+						<input type="checkbox" name="rl" id="rl" />
+					</Col>
+				</Row>
+			</div>
+		{/if}
+
+		<label for="pc"
+			>If you were entering a PC game tournament (League, Valorant etc), what would you be willing
+			to do?</label
+		>
+		<select name="pc" id="pc">
+			<option value="bringOwn" selected>Bring my own PC</option>
+			<option value="rentPC">Rent a PC (Higher Ticket Price)</option>
+			<option value="neither">Not willing to do either</option>
+		</select>
 
 		<label for="price" class="required"> What is the maximum you'd pay for a ticket? </label>
 		<select name="price" id="price" required>

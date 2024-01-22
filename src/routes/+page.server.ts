@@ -98,6 +98,9 @@ export const actions = {
 		const choices = ['lan', 'ctf', 'gamejam', 'magic', 'tabletop', 'casualgames'];
 		const price = data.get('price');
 		const interests = choices.map((field) => (data.get(field) === 'on' ? '1' : '0')).join('');
+		const rentOrBringPC = data.get('pc');
+		const gamesList = ['cs2', 'lol', 'valorant', 'smash', 'rl'];
+		const wantedGames = gamesList.map((field) => (data.get(field) === 'on' ? '1' : '0')).join('');
 
 		// Checking college
 		if (other != null && other != '') {
@@ -112,7 +115,9 @@ export const actions = {
 					interests: interests,
 					max_price: price.toString(),
 					timestamp: new Date(),
-					ip: ip.toString()
+					ip: ip.toString(),
+					rentpc: rentOrBringPC.toString(),
+					games: wantedGames
 				}
 			});
 		} catch (e) {

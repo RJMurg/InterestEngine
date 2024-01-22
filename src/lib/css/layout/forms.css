@@ -64,6 +64,7 @@ button:hover {
 label {
 	margin: 1rem 0 0.5rem 0;
 	align-self: flex-start !important;
+	text-align: left;
 	font-weight: 700;
 	padding-right: 0.5rem;
 }
